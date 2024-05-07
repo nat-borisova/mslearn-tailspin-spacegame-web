@@ -1,7 +1,7 @@
 trigger:
 - '*'
 
-pool: my-pc
+pool: MyAgentPool
 
 variables:
   buildConfiguration: 'Release'
