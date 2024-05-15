@@ -3,6 +3,14 @@ trigger:
 
 pool: my-pc
 
+schedules:
+  - cron: '0 15 * * *'
+    displayName: Daily build
+    branches:
+      include:
+      - main
+    always: true
+
 variables:
   buildConfiguration: 'Release'
 
