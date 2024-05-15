@@ -4,7 +4,7 @@ trigger:
 pool: my-pc
 
 schedules:
-  - cron: '10 15 * * *'
+  - cron: '20 15 * * *'
     displayName: Daily build
     branches:
       include:
