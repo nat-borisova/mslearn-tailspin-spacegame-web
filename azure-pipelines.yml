@@ -1,9 +1,10 @@
-trigger: none
+trigger:
+- main
 
 pool: my-pc
 
 schedules:
-  - cron: '0 * * * *'
+  - cron: '0 15 * * *'
     displayName: Daily build
     branches:
       include:
