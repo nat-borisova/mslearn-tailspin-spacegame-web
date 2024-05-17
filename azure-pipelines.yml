@@ -7,7 +7,7 @@ schedules:
     displayName: Daily build
     branches:
       include:
-      - new-branch-100
+      - main
     always: true
 
 variables:
