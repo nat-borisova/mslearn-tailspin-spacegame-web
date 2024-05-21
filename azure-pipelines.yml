@@ -8,7 +8,6 @@ schedules:
     displayName: Daily build
     branches:
       include:
-      - main
       - release/v1
     always: true
 
