@@ -9,8 +9,7 @@ schedules:
     branches:
       include:
       - main
-      - build-pipeline
-      - release/*
+      - release/v1
     always: true
 
 variables:
