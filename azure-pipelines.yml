@@ -1,7 +1,7 @@
 trigger:
 - main
 
-pool: my-pc
+pool: pc
 
 schedules:
   - cron: '0 * * * *'
