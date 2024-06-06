@@ -1,7 +1,7 @@
 trigger:
 - main
 
-pool: azure pipelines
+pool: my-pc
 
 schedules:
   - cron: '0 * * * *'
