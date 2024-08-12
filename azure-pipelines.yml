@@ -4,21 +4,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 schedules:
-  - cron: '0 * * * *'
-    displayName: Hourly build
-    branches:
-      include:
-        - main
-        - release/*
-      exclude:
-        - release/v3
-    always: true
-
   - cron: '0 */2 * * *'
     displayName: Every 2 hours build
     branches:
       include:
-        - release/*
+        - deploy/v1
+      exclude:
+        - deploy/v2
     always: true
 
 variables:
