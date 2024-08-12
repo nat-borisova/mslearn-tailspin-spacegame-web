@@ -8,9 +8,9 @@ schedules:
     displayName: Every 2 hours build
     branches:
       include:
-        - deploy/v1
+        - deploy/*
       exclude:
-        - deploy/v2
+        - deploy/*2
     always: true
 
 variables:
