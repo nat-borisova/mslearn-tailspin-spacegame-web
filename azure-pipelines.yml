@@ -14,8 +14,8 @@ schedules:
         - release/v3
     always: true
 
-  - cron: "0 */6 * * *"
-    displayName: Every 6 hours build
+  - cron: '0 */2 * * *'
+    displayName: Every 2 hours build
     branches:
       include:
         - release/*
