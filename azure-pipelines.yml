@@ -1,5 +1,9 @@
 trigger:
-- main
+  branches:
+    include:
+      - 'release/*'
+    exclude:
+      - 'release/v3'
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -9,8 +13,10 @@ schedules:
     displayName: Daily build
     branches:
       include:
-      - main
-    always: true
+        - main
+        - 'release/*'
+      exclude:
+        - 'release/v3'
 
 variables:
   buildConfiguration: 'Release'
