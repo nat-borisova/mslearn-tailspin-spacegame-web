@@ -1,22 +1,18 @@
-trigger:
-  branches:
-    include:
-      - 'release/*'
-    exclude:
-      - 'release/v3'
+trigger: none
 
 pool:
   vmImage: 'ubuntu-latest'
 
 schedules:
   - cron: '0 * * * *'
-    displayName: Daily build
+    displayName: Hourly build
     branches:
       include:
         - main
-        - 'release/*'
+        - release/*
       exclude:
-        - 'release/v3'
+        - release/v3
+    always: true
 
 variables:
   buildConfiguration: 'Release'
