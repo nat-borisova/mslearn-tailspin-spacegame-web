@@ -1,19 +1,19 @@
 trigger:
 - main
 
-pool: my-pc
+pool:
+  vmImage: 'ubuntu-latest'
 
-schedules:
-  - cron: '20 15 * * *'
-    displayName: Daily build
-    branches:
-      include:
-      - main
-    always: true
+pr: none
 
-variables:
-  buildConfiguration: 'Release'
+resources:
+  repositories:
+    - repository: nat-borisova
+      type: github
+      endpoint: GitHub
+      name: test1
+      ref: refs/heads/master  
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
