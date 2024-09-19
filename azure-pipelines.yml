@@ -8,10 +8,10 @@ pr: none
 
 resources:
   repositories:
-    - repository: nat-borisova
+    - repository: testrepo
       type: github
+      name: nat-borisova/test1
       endpoint: GitHub
-      name: test1
       ref: refs/heads/master  
 
 steps:
