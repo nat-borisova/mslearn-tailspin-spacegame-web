@@ -12,7 +12,7 @@ resources:
       type: github
       name: nat-borisova/test1
       endpoint: GitHub
-      ref: refs/heads/master  
+      ref: refs/heads/main 
 
 steps:
 - script: echo Hello, world!
